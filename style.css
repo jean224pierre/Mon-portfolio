@@ -1,0 +1,152 @@
+body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ .navbar {
+    background-color: white !important;
+    height: auto;
+ }
+
+.navbar-toggler {
+border: none !important;
+outline: none !important;
+box-shadow: none !important;
+background: transparent !important;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 30px;
+height: 25px;
+padding: 0;
+}
+
+.icon-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Espacement personnalisé pour tes images de compétences */
+.skill-icon {
+    max-width: 80px;
+    margin: 10px auto;
+}
+
+.nav-link {
+    color: #666777 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 5px;
+    transition: color 0.03s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #3c94e7 !important;
+}
+
+.container {
+    max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px 0;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: arial, sans-serif;
+}
+
+/* 1. Mon nom dans le <h1> (Couleur bleue au survol) */
+#accueil h1 {
+    color: #333; /* Couleur de base sombre */
+}
+
+.mon-nom {
+    font-weight: bold;
+    color: #333; /* Ton nom est noir au départ */
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.mon-nom:hover {
+    color: #3c94e7; /* Uniquement ton nom devient bleu au survol */
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.ma-photo {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.form-contact {
+    max-width: 450px; /* Limite la largeur à 500px */
+    margin-left: auto;   /* Force l'alignement à gauche */
+    margin-right: auto; /* Laisse l'espace vide à droite */
+}
+
+/* S'assure que les cases à l'intérieur ne bavent pas */
+.form-control {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Réduit la taille du gros titre sur mobile */
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1rem; /* Rend la lecture plus agréable sur téléphone */
+        padding: 0 10px;
+    }
+    
+    section {
+        padding: 30px 0; /* Moins d'espace perdu en hauteur sur mobile */
+    }
+}
