@@ -1031,6 +1031,7 @@ nav .logo:hover {
     
     .social-links {
         justify-content: center;
+        align-items: center;
     }
     
     .cv-btn {
