@@ -998,10 +998,10 @@ nav .logo:hover {
     }
     
     .profile-card {
-        width: 90%;
-        max-width: 320px;
-        margin: 0 auto;
-        padding: 20px 15px;
+        width: 95%;
+        max-width: 400px;
+        margin: 20 auto;
+        padding: 25px;
         box-sizing: border-box;
     }
     
